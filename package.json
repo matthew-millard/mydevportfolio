@@ -1,0 +1,19 @@
+{
+  "name": "mydevportfolio",
+  "version": "1.0.0",
+  "description": "Repository for my personal web developer portfolio, highlighting my skills, work, and passion for technology.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthew-millard/mydevportfolio.git"
+  },
+  "author": "Matthew Millard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthew-millard/mydevportfolio/issues"
+  },
+  "homepage": "https://github.com/matthew-millard/mydevportfolio#readme"
+}
