@@ -1,0 +1,104 @@
+/* Test Font */
+@font-face {
+	font-family: 'soehne-buch';
+	src: url('./assets/KlimTestFonts/Test web fonts (WOFF2)/Test Söhne Collection/Test Söhne/test-soehne-buch.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	font-size: 62.5%;
+	--light-shade: #f2f4f3;
+	--dark-shade: #060a0e;
+	--primaryColorRef: #3c6997;
+	--secondaryColorRef: #1d3349;
+	--errorColorRef: #a31621;
+}
+
+body {
+	font-family: 'soehne-buch', sans-serif;
+	font-size: 2rem;
+	line-height: 1.6;
+	color: var(--dark-shade);
+	background-color: var(--light-shade);
+}
+
+/* Fonts */
+a {
+	color: var(--dark-shade);
+}
+
+/*  */
+.grid {
+	display: grid;
+}
+
+.flex {
+	display: flex;
+}
+
+.page-container {
+	min-height: 100vh;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 100px auto 50px;
+	grid-template-areas:
+		'h h h h h h h h h h h h'
+		'm m m m m m m m m m m m'
+		'f f f f f f f f f f f f';
+}
+
+/* Header */
+.header {
+	grid-area: h;
+}
+
+.header__navigation {
+	height: 100%;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	grid-template-areas: 'logo links socials';
+}
+
+.header__navigation-logo {
+	grid-area: logo;
+	justify-content: center;
+	align-items: center;
+	font-size: 4.8rem;
+	font-weight: 600;
+	letter-spacing: -0.1rem;
+}
+
+.header__navigation-links {
+	grid-area: links;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+}
+
+.header__navigation-item {
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 0.3ex;
+	text-decoration-color: var(--primaryColorRef);
+	transition: text-underline-offset 150ms ease-in-out;
+}
+
+.header__navigation-item:hover {
+	text-underline-offset: 0.1ex;
+}
+
+.header__navigation-socials {
+	grid-area: socials;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.main-content {
+	grid-area: m;
+	border-bottom: 2px solid black;
+}
+
+.footer {
+	grid-area: f;
+}
