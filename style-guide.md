@@ -18,10 +18,10 @@ font-style: normal;
 
 ## Colors
 
-``` CSS
---primaryColorRef: #93ffe6;
---secondaryColorRef: #101c19;
---mixedColorRef: #5da292;;
---errorColorRef: #e4001c;
+```CSS
+--light-shade: #F2F4F3;
+--dark-shade: #060A0E;
+--primaryColorRef: #3C6997;
+--secondaryColorRef: #1D3349;
+--errorColorRef: #A31621;
 ```
-
