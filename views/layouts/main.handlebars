@@ -17,16 +17,25 @@
         <nav class='header__navigation grid'>
           <a href='#' class='header__navigation-logo flex'>Matt Millard</a>
           <ul class='header__navigation-links flex'>
-            <li class='header__navigation-item'><a href='#' class='header__navigation-link'>About</a></li>
-            <li class='header__navigation-item'><a href='#' class='header__navigation-link'>Projects</a></li>
-            <li class='header__navigation-item'><a href='#' class='header__navigation-link'>Contact</a></li>
+            <li class='header__navigation-item link-underline'><a
+                href='#'
+                class='header__navigation-link'
+              >About</a></li>
+            <li class='header__navigation-item link-underline'><a
+                href='#'
+                class='header__navigation-link'
+              >Projects</a></li>
+            <li class='header__navigation-item link-underline'><a
+                href='#'
+                class='header__navigation-link'
+              >Contact</a></li>
           </ul>
           <ul class='header__navigation-socials flex'>
             <li class='header__navigation-social'><a href='#' class='header__navigation-social-link'><i
                   class='fa-brands fa-github'
                 ></i></a></li>
             <li class='header__navigation-social'><a href='#' class='header__navigation-social-link'><i
-                  class='fa-brands fa-linkedin'
+                  class='fa-brands fa-linkedin orange-accent'
                 ></i></a></li>
             <li class='header__navigation-social'><a href='#' class='header__navigation-social-link'><i
                   class='fa-brands fa-codepen'
@@ -43,7 +52,55 @@
       <main class='main-content page-section'>
         {{body}}
       </main>
-      <footer class='footer page-section'></footer>
+
+      <footer class='footer page-section'>
+        <nav class='footer__navigation'>
+          <ul class='footer__navigation-list flex'>
+            <li class='footer__navigation-item link-underline'><a
+                href='#'
+                class='footer__navigation-link'
+              >About</a></li>
+            <li class='footer__navigation-item link-underline'><a
+                href='#'
+                class='footer__navigation-link'
+              >Projects</a></li>
+            <li class='footer__navigation-item link-underline'><a
+                href='#'
+                class='footer__navigation-link'
+              >Contact</a></li>
+            <li class='footer__navigation-item link-underline'><a href='#' class='footer__navigation-link'>Blog</a></li>
+            <li class='footer__navigation-item link-underline'><a href='#' class='footer__navigation-link'>Source Code</a></li>
+          </ul>
+        </nav>
+        <hr class='footer__navigation-divider divider' />
+        <blockquote class='footer__navigation-blockquote flex'>
+          <q>There are many terrible mistakes to make in program design, and you should go ahead and make them so that
+            you understand them. A sense of what a good program looks like is developed in practice, not learned from a
+            list of rules.</q>
+          <cite>- Marijn Haverbeke, <i>Eloquent JavaScript</i></cite>
+        </blockquote>
+
+        <ul class='footer__navigation-socials flex'>
+          <li class='footer__navigation-social'><a href='#' class='footer__navigation-social-link'><i
+                class='fa-brands fa-github'
+              ></i></a></li>
+          <li class='footer__navigation-social'><a href='#' class='footer__navigation-social-link'><i
+                class='fa-brands fa-linkedin orange-accent'
+              ></i></a></li>
+          <li class='footer__navigation-social'><a href='#' class='footer__navigation-social-link'><i
+                class='fa-brands fa-codepen'
+              ></i></a></li>
+          <li class='footer__navigation-social'><a href='#' class='footer__navigation-social-link'><i
+                class='fa-brands fa-twitter'
+              ></i></a></li>
+          <li class='footer__navigation-social'><a href='#' class='footer__navigation-social-link'><i
+                class='fa-brands fa-medium'
+              ></i></a></li>
+        </ul>
+        <div class='footer__navigation-copyright flex'>
+          <small class='footer__navigation-copyright-text white-text'>&copy; 2023 Copyright Matt Millard</small>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

@@ -51,7 +51,7 @@ app.use(routes);
 // Start server
 const startServer = async () => {
   try {
-    await sequelize.sync({ force: true });
+    await sequelize.sync({ force: false });
     app.listen(PORT, () => {
       console.log(`Application is listening on port: ${PORT}`);
     });
